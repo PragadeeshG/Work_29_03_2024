@@ -1,0 +1,15 @@
+create table if not exists policy_structure(
+id bigint not null,
+version_def varchar(255) null,
+language_version varchar(255) null,
+statement varchar(255) null,
+s_id varchar(255) null,
+allow_effect varchar(255) null,
+deny_effect varchar(255) null,
+account_principal varchar(255) null,
+user_principal varchar(255) null,
+role_principal varchar(255) null,
+action_list varchar(255) null,
+resource_list varchar(255) null,
+policy_condition varchar(255) null,
+constraint policy_structure_pk primary key(id));
